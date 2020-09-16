@@ -5,7 +5,6 @@ module.exports = {
     author: `Fred Soloy`,
   },
   plugins: [
-    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
