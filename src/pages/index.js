@@ -1,34 +1,53 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import ProgressBar from "../components/bar"
 
 const testData = [{ bgcolor: "#6a1b9a", completed: 25 }]
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to my new personal site.</p>
-    <p>Ready soon, progress...</p>
-    {testData.map((item, idx) => (
-      <ProgressBar
-        key={idx}
-        bgcolor={item.bgcolor}
-        completed={item.completed}
-      />
-    ))}
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link style={{ textDecoration: "none" }} to="/page-2/">
-      Contact page
-    </Link>{" "}
-    <br />
-  </Layout>
-)
+const Index = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <h1>Hi people</h1>
+      <p>Welcome to my new personal site.</p>
+      <p>Ready soon, progress...</p>
+      {testData.map((item, idx) => (
+        <div>
+          <ProgressBar
+            key={idx}
+            bgcolor={item.bgcolor}
+            completed={item.completed}
+          />
+        </div>
+      ))}
+    </Layout>
+  )
+}
 
-export default IndexPage
+// const IndexPage = () => (
+//   <Layout>
+//     <SEO title="Home" />
+//     <h1>Hi people</h1>
+//     <p>Welcome to my new personal site.</p>
+//     <p>Ready soon, progress...</p>
+//     {testData.map((item, idx) => (
+//       <ProgressBar
+//         key={idx}
+//         bgcolor={item.bgcolor}
+//         completed={item.completed}
+//       />
+//     ))}
+//     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+//       <Image />
+//     </div>
+//     <Link style={{ textDecoration: "none" }} to="/page-2/">
+//       Contact page
+//     </Link>{" "}
+//     <br />
+//   </Layout>
+// )
+
+export default Index
