@@ -12,8 +12,12 @@ const Index = () => {
     <Layout>
       <SEO title="Home" />
       <h1>Hi people</h1>
-      <p>Welcome to my new personal site.</p>
-      <p>Ready soon, progress...</p>
+      <p>
+        Rebuiding my personal site,
+        <br />
+        with GatsbyJS
+      </p>
+      <p>Ready soon, in progress...</p>
       {testData.map((item, idx) => (
         <div>
           <ProgressBar

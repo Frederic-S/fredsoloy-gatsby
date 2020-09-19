@@ -13,11 +13,6 @@ const Header = () => {
             <img className={headerStyles.logoSize} src={logo} alt="Logo" />
           </Link>
         </p>
-        {/* <p>
-          <Link to="/" className={headerStyles.brand}>
-            Fred Soloy
-          </Link>
-        </p> */}
       </div>
     </header>
   )
