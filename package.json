@@ -25,8 +25,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.1.0",
-    "tailwindcss": "^1.8.10"
+    "prettier": "2.1.0"
   },
   "keywords": [
     "gatsby"

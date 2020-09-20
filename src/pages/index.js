@@ -18,14 +18,13 @@ const Index = () => {
         with GatsbyJS
       </p>
       <p>Ready soon, in progress...</p>
+
       {testData.map((item, idx) => (
-        <div>
-          <ProgressBar
-            key={idx}
-            bgcolor={item.bgcolor}
-            completed={item.completed}
-          />
-        </div>
+        <ProgressBar
+          key={idx}
+          bgcolor={item.bgcolor}
+          completed={item.completed}
+        />
       ))}
     </Layout>
   )

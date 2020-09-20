@@ -21,6 +21,7 @@ const ProgressBar = props => {
 
   const labelStyles = {
     padding: 15,
+    margin: 15,
     color: "white",
     fontWeight: "bold",
   }
