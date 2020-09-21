@@ -8,12 +8,14 @@ const Index = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Hi people</h1>
-      <p>
-        I'm Fred
-        <br />
-        Web Developer
-      </p>
+      <div className="container">
+        <h1>Hi people</h1>
+        <p>
+          I'm Fred
+          <br />
+          Web Developer
+        </p>
+      </div>
     </Layout>
   )
 }
